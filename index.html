@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>HERITAGE OF INDIA</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <div id="navbar">
+      <img src="images/menu_icon.png" style="height:25px;width:25px;cursor:pointer;margin:12px 10px 50px 0px;">
+      <div class="navlist">
+        <a class="nav_element" href="">Home</a><br>
+        <a class="nav_element" href="">About</a><br>
+        <a class="nav_element" href="">Contact</a>
+      </div>
+    </div>
+
+    <div id='topnav'>
+      <h2 style='color:#4056a1;font-weight:100;font-family:trebuchet ms; margin-left:50px'>HERITAGE OF INDIA</h2>
+      <span>
+        <a id='signupbtn'>Signup</a>
+        <a id='loginbtn'>Login</a>
+      </span>
+    </div>
+
+    <div id='bodydiv'>
+      <div id='quotediv'>
+          <h3 style="font-family: cursive;">"The Taj Mahal rises above the banks of the river like a solitary tear suspended on the cheek of time."</h3>
+      </div>
+    </div>
+
+
+
+    <div id="mid_div_out">
+      <h2 style="font-family:trebuchet ms; color:#123c69; display:block; background-image:linear-gradient(to right, #f93, #ddd, #138808)">Monuments of INDIA</h2>
+      <div id="mid_div">
+        <div class="image_div" style="background-image:url('images/redfort.jpg')"></div>
+        <div class="image_div" style="background-image:url('images/Gateway-of-India.jpg')"></div>
+        <div class="image_div" style="background-image:url('images/hampi.jpg')"></div>
+        <div class="image_div" style="background-image:url('images/Tajmahal_small.jpg')"></div>
+        <div class="image_div" style="background-image:url('images/hawamahal.jpg')"></div>
+        <div class="image_div" style="background-image:url('images/qminar.jpg')"></div>
+        <div class="image_div" style="background-image:url('images/charminar.jpg')"></div>
+        <div class="image_div" style="background-image:url('images/Golden_Temple_India.jpg')"></div>
+      </div>
+    </div>
+
+    <div class="foot">
+      <a href="#">Rohith Saranga</a>
+      <a href="#">Email: saranga.rohith@gmail.com</a>
+      <a href="#">Ph: 7730866022</a>
+    </div>
+
+    <div id="formdiv_login"  style='text-align:right;height:150px'>
+      <a onclick="hidediv(this.parentElement)" class='cross' cursor="pointer">X</a>
+      <form class="form" action="server.js" method="GET" style="text-align:center;margin:20px">
+        <label for="username">Username: </label>
+        <input type="text" name="username" value="" placeholder="Enter Username"><br><br>
+        <label for="password">Email: </label>
+        <input type="password" name="password" value="" placeholder="Enter password"><br><br>
+        <input type="submit" name="submit" value="Submit">
+      </form>
+    </div>
+
+    <div id="formdiv_signup" style='text-align:right'>
+      <a onclick="hidediv(this.parentElement)" class='cross' cursor="pointer">X</a>
+      <form class="form" action="server.js" method="GET" style="text-align:center;margin:20px">
+        <label for="name">Name: </label>
+        <input type="text" name="name" value="" placeholder="Enter Fullname"><br><br>
+        <label for="name">Email: </label>
+        <input type="email" name="email" value="" placeholder="Enter Email"><br><br>
+        <label for="password">Password: </label>
+        <input type="password" name="password" value="" placeholder="Enter password"><br><br>
+        <input type="submit" name="submit" value="Submit">
+      </form>
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,151 @@
+body{
+  margin:0;
+}
+
+h1,h2,h3,p,a,label{
+  color:#fff;
+  font-family:sans-serif;
+  font-weight: 100;
+}
+
+a{
+  cursor: pointer;
+}
+
+#topnav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height:50px;
+  padding-left: 50px;
+  padding-right: 30px;
+}
+
+#signupbtn,#loginbtn{
+  text-align: center;
+  font-size:16px;
+  margin-left: 10px;
+  position:relative;
+  color: #cdcdcd;
+  float: right;
+}
+#loginbtn:hover,#signupbtn:hover{
+  color: #676767;
+  cursor: pointer;
+}
+
+#formdiv_login,#formdiv_signup{
+  display: none;
+  height:200px;
+  position: absolute;
+  padding: 5px 5px 20px 5px;
+  background-image:linear-gradient(to right,#97caef,#3feee6);
+  top: 45%;
+  right:50%;
+  transform: translate(50%, -50%);
+  box-shadow: 0px 0px 5px #989898;
+  transition: color 0.5s;
+
+}
+
+#navbar{
+  position: absolute;
+  height:40px;
+  width:200px;
+  left: -150px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  transition: background-color 0.3s, left 0.2s,height 0.3s;
+  z-index: 1;
+}
+
+#navbar:hover{
+  background-color: #efe2ba;
+  left:0px;
+  height:100%;
+}
+
+.navlist{
+  width:100%;
+  text-align: center;
+}
+
+.nav_element{
+  display: block;
+  color:#655656;
+  text-decoration: none;
+  margin-bottom: 20px;
+  padding: 5px 0px 5px 0px;
+  font-size: 20px;
+  font-weight:600;
+}
+.nav_element:hover{
+  color:#fcfcfc;
+  background-color: #454545;
+}
+
+#bodydiv{
+  height:660px;
+  width:100%;
+  background-image: url('images/tajmahal.jpg');
+  background-size: cover;
+}
+
+#quotediv{
+  position:relative;
+  float:right;
+  height:200px;
+  width:250px;
+  margin:100px 150px 0px 0px;
+  transition: transform 0.5s, font-size 0.5s;
+}
+
+#quotediv:hover{
+  transform: rotate(360deg) scale(1.3);
+  cursor:default;
+}
+
+#mid_div{
+  height:700px;
+  width:100%;
+  padding-top: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#mid_div_out{
+  padding-top: 50px;
+  font-size: 20px;
+  text-align: center;
+  margin:0;
+  background-color:#eae7dc;
+}
+
+.image_div{
+  margin-right: 10px;
+  height:300px;
+  width:300px;
+  background-size:cover;
+  border: 1px solid #a9a9a9;
+  border-radius: 10px;
+  transition: transform 0.3s
+}
+.image_div:hover{
+  transform: scale(1.1);
+  z-index: 2;
+}
+
+.foot{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #4abdac;
+  width: 100%;
+  height:100px;
+}
+
+.foot a{
+  font-family:open sans;
+  text-decoration: none;
+}
