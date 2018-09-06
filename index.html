@@ -18,19 +18,20 @@
 
     <div id='topnav'>
       <h2 style='color:#4056a1;font-weight:100;font-family:trebuchet ms; margin-left:50px'>HERITAGE OF INDIA</h2>
-      <span>
+      <div id = 'loggedout'>
         <a id='signupbtn'>Signup</a>
         <a id='loginbtn'>Login</a>
-      </span>
+      </div>
+      <div id = 'loggedin'>
+        <a id='logoutbtn'>Log out</a>
+      </div>
     </div>
 
     <div id='bodydiv'>
       <div id='quotediv'>
-          <h3 style="font-family: cursive;">"The Taj Mahal rises above the banks of the river like a solitary tear suspended on the cheek of time."</h3>
+          <h3 id='quote' style="font-family: cursive;">"The Taj Mahal rises above the banks of the river like a solitary tear suspended on the cheek of time."</h3>
       </div>
     </div>
-
-
 
     <div id="mid_div_out">
       <h2 style="font-family:trebuchet ms; color:#123c69; display:block; background-image:linear-gradient(to right, #f93, #ddd, #138808)">Monuments of INDIA</h2>
@@ -54,25 +55,29 @@
 
     <div id="formdiv_login"  style='text-align:right;height:150px'>
       <a onclick="hidediv(this.parentElement)" class='cross' cursor="pointer">X</a>
-      <form class="form" action="server.js" method="GET" style="text-align:center;margin:20px">
+      <form class="form" action="http://localhost:8000/login" method="POST" style="text-align:center;margin:20px">
         <label for="username">Username: </label>
         <input type="text" name="username" value="" placeholder="Enter Username"><br><br>
-        <label for="password">Email: </label>
+        <label for="password">Password: </label>
         <input type="password" name="password" value="" placeholder="Enter password"><br><br>
-        <input type="submit" name="submit" value="Submit">
+        <input type="submit" name="submit" value="submit">
       </form>
     </div>
 
     <div id="formdiv_signup" style='text-align:right'>
       <a onclick="hidediv(this.parentElement)" class='cross' cursor="pointer">X</a>
-      <form class="form" action="server.js" method="GET" style="text-align:center;margin:20px">
-        <label for="name">Name: </label>
-        <input type="text" name="name" value="" placeholder="Enter Fullname"><br><br>
+      <form class="form" action="http://localhost:8000/register" method="POST" style="text-align:center;margin:20px">
+        <label for="fullname">Full Name: </label>
+        <input type="text" name="fullname" value="" placeholder="Enter Fullname"><br><br>
+        <label for="username">UserName: </label>
+        <input type="text" name="username" value="" placeholder="Enter Username"><br><br>
         <label for="name">Email: </label>
         <input type="email" name="email" value="" placeholder="Enter Email"><br><br>
         <label for="password">Password: </label>
         <input type="password" name="password" value="" placeholder="Enter password"><br><br>
-        <input type="submit" name="submit" value="Submit">
+        <input type="radio" name="gender" value="male"><p style="display:inline">Male</p>
+        <input type="radio" name="gender" value="female"><p style="display:inline">Female</p><br>
+        <input type="submit" name="submit" value="Submit" style="margin-top:20px;">
       </form>
     </div>
 
